@@ -3,13 +3,13 @@
  * Build the project to create the jar file running the command after navigating to the project root:<br />
  `# .\gradlew -x test build`
  * Make sure that Docker is up and running on your machine and execute this command from project root:<br />
- `# docker build -f Dockerfile . -t gvasilski/demo-numbers-service`
+ `# docker build -f Dockerfile . -t jvjordanVip/demo-numbers-service`
  
  
  you should see this:
  
  <br />
- <br />PS C:\Users\Georgi Vasilski\git\demo-big-numbers-service> docker build -f Dockerfile . -t <br />gvasilski/demo-numbers-service
+ <br />PS C:\Users\Georgi Vasilski\git\demo-big-numbers-service> docker build -f Dockerfile . -t <br />/demo-numbers-service
 <br />Sending build context to Docker daemon  19.71MB
 <br />Step 1/7 : FROM openjdk:8-jdk-alpine
 <br /> ---> 6eb8392704ff
@@ -37,7 +37,7 @@
 * Verify the image creation with next command:<br />
 `# docker images`
 * Run the images and test it with Postman: <br />
-`#docker run -p 7890:7890 gvasilski/demo-numbers-service`<br />
+`#docker run -p 7890:7890 jvjordanvip/demo-numbers-service`<br />
 and try in Postman HTTP:GET @ http://localhost:7890/ping<br />
 you should see a json file with two keys: status and detials. Well done!!!
 
@@ -46,7 +46,7 @@ you should see a json file with two keys: status and detials. Well done!!!
 
 * deploy gvasilski/demo-numbers-service image on a node in the cluster running this command and give the
 service a name ( I would name it here "numop-server" ):<br />
-`# kubectl run numop-server --image=gvasilski/demo-numbers-service:latest --port 7890`
+`# kubectl run numop-server --image=jvjordanvip/demo-numbers-service:latest --port 7890`
 * Verify deployment with : `# kubectl get pods`
 * Expose the service outside the cluster with following command : <br />
 `kubectl expose deployments numop-server --type=LoadBalancer`
