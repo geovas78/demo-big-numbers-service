@@ -51,7 +51,7 @@ service a name ( I would name it here "numop-server" ):<br />
 * Expose the service outside the cluster with following command : <br />
 `kubectl expose deployments numop-server --type=LoadBalancer`
 * Then try with Postman:<br />
-- http://<your machine IP>:7890/ping
-- http://<your machine IP>:7890/v1/math/inputs-multiply?number=5&multiplier=10
+- http://<<your machine IP>>:7890/ping
+- http://<<your machine IP>>:7890/v1/math/inputs-multiply?number=5&multiplier=10
 
 
