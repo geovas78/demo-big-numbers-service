@@ -54,4 +54,7 @@ service a name ( I would name it here "numop-server" ):<br />
 - http://your-machine-ip:7890/ping
 - http://your-machine-ip:7890/v1/math/inputs-multiply?number=5&multiplier=10
 
+### Misc
+If you are experiencing problems running tests in Eclipse IDE, add JUNIT5 library to the buildpath.
+
 
