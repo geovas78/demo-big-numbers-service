@@ -1,7 +1,7 @@
 ## How to create a docker image
 
  * Build the project to create the jar file running the command after navigating to the project root:<br />
- `# .\gradlew build`
+ `# .\gradlew -x test build`
  * Make sure that Docker is up and running on your machine and execute this command from project root:<br />
  `# docker build -f Dockerfile . -t jvjordanVip/demo-numbers-service`
  
