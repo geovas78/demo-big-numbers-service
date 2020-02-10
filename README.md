@@ -32,7 +32,7 @@
 <br /> ---> Using cache
 <br /> ---> 7066ba915684
 <br />Successfully built 7066ba915684
-<br />Successfully tagged gvasilski/demo-numbers-service:latest
+<br />Successfully tagged jvjordanvip/demo-numbers-service:latest
 
 * Verify the image creation with next command:<br />
 `# docker images`
